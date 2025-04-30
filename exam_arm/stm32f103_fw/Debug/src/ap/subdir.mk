@@ -16,7 +16,7 @@ C_DEPS += \
 
 # Each subdirectory must supply rules for building sources it contributes
 src/ap/%.o src/ap/%.su src/ap/%.cyclo: ../src/ap/%.c src/ap/subdir.mk
-	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -c -I"C:/re/repos/exam_arm/stm32f103_fw/src" -I"C:/re/repos/exam_arm/stm32f103_fw/src/bsp" -I"C:/re/repos/exam_arm/stm32f103_fw/src/ap" -I"C:/re/repos/exam_arm/stm32f103_fw/src/common" -I"C:/re/repos/exam_arm/stm32f103_fw/src/hw" -I"C:/re/repos/exam_arm/stm32f103_fw/src/lib" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -c -I"C:/repos/arm/exam_arm/stm32f103_fw/src" -I"C:/repos/arm/exam_arm/stm32f103_fw/src/bsp" -I"C:/repos/arm/exam_arm/stm32f103_fw/src/ap" -I"C:/repos/arm/exam_arm/stm32f103_fw/src/common" -I"C:/repos/arm/exam_arm/stm32f103_fw/src/hw" -I"C:/repos/arm/exam_arm/stm32f103_fw/src/lib" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
 
 clean: clean-src-2f-ap
 
