@@ -1,0 +1,10 @@
+20:33:00 **** Incremental Build of configuration Debug for project stm32f103_fw ****
+make -j12 all 
+arm-none-eabi-size  stm32f103_fw.elf 
+   text	   data	    bss	    dec	    hex	filename
+    620	      0	   1568	   2188	    88c	stm32f103_fw.elf
+Finished building: default.size.stdout
+ 
+
+20:33:00 Build Finished. 0 errors, 0 warnings. (took 201ms)
+
