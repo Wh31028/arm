@@ -26,5 +26,6 @@ src/ap \
 src/bsp \
 src/bsp/startup \
 src/hw \
+src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src \
 src \
 

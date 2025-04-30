@@ -290,3 +290,9 @@ java.lang.Exception: The project description file (.project) for 'stm32f103_fw' 
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-04-30 22:36:46.271
 !MESSAGE Indexed 'stm32f103_fw' (6 sources, 62 headers) in 0.479 sec: 2,122 declarations; 3,018 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.039%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-04-30 22:59:49.588
+!MESSAGE Indexed 'stm32f103_fw' (17 sources, 112 headers) in 0.775 sec: 6,403 declarations; 16,139 references; 2 unresolved inclusions; 98 syntax errors; 1,550 unresolved names (6.4%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-04-30 23:01:58.095
+!MESSAGE Indexed 'stm32f103_fw' (17 sources, 112 headers) in 0.949 sec: 7,126 declarations; 24,925 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (0.58%)

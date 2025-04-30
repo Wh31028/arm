@@ -8,9 +8,6 @@
 
 #include "main.h"
 
-
-
-
 int main(void)
 {
 	hwInit();
@@ -19,4 +16,5 @@ int main(void)
 	apMain();
 
 	return 0;
+
 }
