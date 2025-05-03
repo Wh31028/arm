@@ -28,5 +28,9 @@ src/bsp/startup \
 src/hw/driver \
 src/hw \
 src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src \
+src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src \
+src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Src \
+src/lib/cube_f103/USB_DEVICE/App \
+src/lib/cube_f103/USB_DEVICE/Target \
 src \
 
