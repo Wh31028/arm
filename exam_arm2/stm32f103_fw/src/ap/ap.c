@@ -23,5 +23,6 @@ void apMain(void)
 		ledToggle(_DEF_LED1);
 		delay(500);
 
+		CDC_Transmit_FS("test\n",6);
 	}
 }

@@ -1,0 +1,28 @@
+/*
+ * ap.c
+ *
+ *  Created on: May 10, 2025
+ *      Author: wh310
+ */
+
+
+#include "ap.h"
+
+
+
+
+void apInit(void)
+{
+
+}
+
+void apMain(void)
+{
+	while(1)
+	{
+		ledToggle(_DEF_LED1);
+		delay(500);
+
+		CDC_Transmit_FS(uint8_t* Buf, uint16_t Len)
+	}
+}
