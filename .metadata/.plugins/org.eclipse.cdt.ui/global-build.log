@@ -1,85 +1,21 @@
-14:19:47 **** Incremental Build of configuration Debug for project stm32f103_fw ****
+16:07:16 **** Incremental Build of configuration Debug for project stm32f103_fw ****
 make -j12 all 
-arm-none-eabi-gcc "../src/bsp/bsp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -c -I"C:/repos/arm/exam_arm2/stm32f103_fw/src" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/bsp" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/common" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/hw" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/ap" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/bsp/bsp.d" -MT"src/bsp/bsp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/bsp.o"
-arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -c -I"C:/repos/arm/exam_arm2/stm32f103_fw/src" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/bsp" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/common" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/hw" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/ap" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+arm-none-eabi-gcc "../src/bsp/bsp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -c -I"C:/repos/arm/exam_arm2/stm32f103_fw/src" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/bsp" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/common" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/hw" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/ap" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/CMSIS/Include" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/bsp/bsp.d" -MT"src/bsp/bsp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/bsp.o"
 arm-none-eabi-gcc -o "stm32f103_fw.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\repos\arm\exam_arm2\stm32f103_fw\src\bsp\ldscript\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_fw.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: stm32f103_fw.elf
  
 arm-none-eabi-size  stm32f103_fw.elf 
 arm-none-eabi-objdump -h -S stm32f103_fw.elf  > "stm32f103_fw.list"
    text	   data	    bss	    dec	    hex	filename
-    620	      0	   1568	   2188	    88c	stm32f103_fw.elf
+   3724	     12	   1572	   5308	   14bc	stm32f103_fw.elf
 Finished building: default.size.stdout
  
 Finished building: stm32f103_fw.list
  
-14:43:16 **** Incremental Build of configuration Debug for project stm32f103_fw ****
+16:07:49 **** Incremental Build of configuration Debug for project stm32f103_fw ****
 make -j12 all 
 arm-none-eabi-size  stm32f103_fw.elf 
    text	   data	    bss	    dec	    hex	filename
-    620	      0	   1568	   2188	    88c	stm32f103_fw.elf
-Finished building: default.size.stdout
- 
-14:44:15 **** Incremental Build of configuration Debug for project stm32f103_fw ****
-make -j12 all 
-arm-none-eabi-size  stm32f103_fw.elf 
-   text	   data	    bss	    dec	    hex	filename
-    620	      0	   1568	   2188	    88c	stm32f103_fw.elf
-Finished building: default.size.stdout
- 
-14:45:39 **** Incremental Build of configuration Debug for project stm32f103_fw ****
-make -j12 all 
-arm-none-eabi-size  stm32f103_fw.elf 
-   text	   data	    bss	    dec	    hex	filename
-    620	      0	   1568	   2188	    88c	stm32f103_fw.elf
-Finished building: default.size.stdout
- 
-14:46:08 **** Incremental Build of configuration Debug for project stm32f103_fw ****
-make -j12 all 
-arm-none-eabi-size  stm32f103_fw.elf 
-   text	   data	    bss	    dec	    hex	filename
-    620	      0	   1568	   2188	    88c	stm32f103_fw.elf
-Finished building: default.size.stdout
- 
-14:46:29 **** Incremental Build of configuration Debug for project stm32f103_fw ****
-make -j12 all 
-arm-none-eabi-size  stm32f103_fw.elf 
-   text	   data	    bss	    dec	    hex	filename
-    620	      0	   1568	   2188	    88c	stm32f103_fw.elf
-Finished building: default.size.stdout
- 
-14:47:59 **** Incremental Build of configuration Debug for project stm32f103_fw ****
-make -j12 all 
-arm-none-eabi-size  stm32f103_fw.elf 
-   text	   data	    bss	    dec	    hex	filename
-    620	      0	   1568	   2188	    88c	stm32f103_fw.elf
-Finished building: default.size.stdout
- 
-14:48:08 **** Incremental Build of configuration Debug for project stm32f103_fw ****
-make -j12 all 
-arm-none-eabi-size  stm32f103_fw.elf 
-   text	   data	    bss	    dec	    hex	filename
-    620	      0	   1568	   2188	    88c	stm32f103_fw.elf
-Finished building: default.size.stdout
- 
-14:52:58 **** Incremental Build of configuration Debug for project stm32f103_fw ****
-make -j12 all 
-arm-none-eabi-size  stm32f103_fw.elf 
-   text	   data	    bss	    dec	    hex	filename
-    620	      0	   1568	   2188	    88c	stm32f103_fw.elf
-Finished building: default.size.stdout
- 
-14:57:39 **** Incremental Build of configuration Debug for project stm32f103_fw ****
-make -j12 all 
-arm-none-eabi-size  stm32f103_fw.elf 
-   text	   data	    bss	    dec	    hex	filename
-    620	      0	   1568	   2188	    88c	stm32f103_fw.elf
-Finished building: default.size.stdout
- 
-15:21:50 **** Incremental Build of configuration Debug for project stm32f103_fw ****
-make -j12 all 
-arm-none-eabi-size  stm32f103_fw.elf 
-   text	   data	    bss	    dec	    hex	filename
-    620	      0	   1568	   2188	    88c	stm32f103_fw.elf
+   3724	     12	   1572	   5308	   14bc	stm32f103_fw.elf
 Finished building: default.size.stdout
  

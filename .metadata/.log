@@ -149,3 +149,9 @@ org.eclipse.core.runtime.CoreException: Setup exceptions
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 !SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2025-05-10 14:48:08.243
 !MESSAGE Setup exceptions
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-05-10 15:41:25.915
+!MESSAGE Indexed 'stm32f103_fw' (17 sources, 79 headers) in 0.383 sec: 3,056 declarations; 7,968 references; 0 unresolved inclusions; 39 syntax errors; 1,286 unresolved names (10%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-05-10 15:44:30.579
+!MESSAGE Indexed 'stm32f103_fw' (17 sources, 86 headers) in 0.732 sec: 3,769 declarations; 13,330 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)

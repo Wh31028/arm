@@ -1,0 +1,35 @@
+/*
+ * bsp.c
+ *
+ *  Created on: May 10, 2025
+ *      Author: wh310
+ */
+
+
+#include "bsp.h"
+
+
+
+
+void bspInit(void)
+{
+	 HAL_Init();
+
+	  /* USER CODE BEGIN Init */
+
+	  /* USER CODE END Init */
+
+	  /* Configure the system clock */
+	  SystemClock_Config();
+
+}
+
+void delay(uint32_t ms)
+{
+
+}
+
+uint32_t millis(void)
+{
+	return 0;
+}
