@@ -1,0 +1,20 @@
+/*
+ * hw_def.h
+ *
+ *  Created on: May 10, 2025
+ *      Author: wh310
+ */
+
+#ifdef SRC_HW_HW_DEF_H_
+#define SRC_HW_HW_DEF_H_
+
+
+#include "def.h"
+#include "bsp.h"
+
+
+#ifdef _USE_HW_LED
+#define LED_MAX_CH       1
+
+
+#endif /* SRC_HW_HW_DEF_H_ */
