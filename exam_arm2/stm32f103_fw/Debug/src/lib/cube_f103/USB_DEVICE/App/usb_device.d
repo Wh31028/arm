@@ -36,6 +36,7 @@ src/lib/cube_f103/USB_DEVICE/App/usb_device.o: \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/bsp/bsp.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/led.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/hw/hw_def.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/uart.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
@@ -81,6 +82,7 @@ C:/repos/arm/exam_arm2/stm32f103_fw/src/common/def.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/bsp/bsp.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/led.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/hw/hw_def.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/uart.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:

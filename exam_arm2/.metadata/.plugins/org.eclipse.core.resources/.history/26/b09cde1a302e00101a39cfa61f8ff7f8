@@ -1,0 +1,14 @@
+/*
+ * uart.h
+ *
+ *  Created on: May 11, 2025
+ *      Author: wh310
+ */
+
+#ifndef SRC_COMMON_HW_INCLUDE_UART_H_
+#define SRC_COMMON_HW_INCLUDE_UART_H_
+
+
+bool uartInit(void);
+
+#endif /* SRC_COMMON_HW_INCLUDE_UART_H_ */

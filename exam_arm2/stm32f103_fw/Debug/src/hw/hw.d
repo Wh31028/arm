@@ -27,7 +27,8 @@ src/hw/hw.o: ../src/hw/hw.c ../src/hw/hw.h ../src/hw/hw_def.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/led.h \
- C:/repos/arm/exam_arm2/stm32f103_fw/src/hw/hw_def.h
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/hw/hw_def.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/uart.h
 ../src/hw/hw.h:
 ../src/hw/hw_def.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/def.h:
@@ -59,3 +60,4 @@ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driv
 C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/led.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/hw/hw_def.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/uart.h:

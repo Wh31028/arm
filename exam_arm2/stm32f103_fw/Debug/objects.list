@@ -7,6 +7,7 @@
 "./src/bsp/system_stm32f1xx.o"
 "./src/bsp/startup/startup_stm32f103c8tx.o"
 "./src/hw/driver/led.o"
+"./src/hw/driver/uart.o"
 "./src/hw/hw.o"
 "./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
 "./src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
