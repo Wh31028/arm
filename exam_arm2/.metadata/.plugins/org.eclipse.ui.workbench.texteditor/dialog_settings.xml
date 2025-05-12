@@ -3,6 +3,9 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
 	<list key="searchhistory">
+		<item value="bkup"/>
+		<item value="bk"/>
+		<item value="control"/>
 		<item value="transmit"/>
 		<item value="cdc"/>
 	</list>

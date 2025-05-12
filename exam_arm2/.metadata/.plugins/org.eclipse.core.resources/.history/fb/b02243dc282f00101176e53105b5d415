@@ -1,0 +1,33 @@
+/*
+ * reset.c
+ *
+ *  Created on: May 12, 2025
+ *      Author: wh310
+ */
+
+
+#include "reset.h"
+#include "rtc.h"
+
+static uint32_t reset_count = 0;
+
+bool resetInit(void)
+{
+	bool ret = true;
+
+	//만약 Reset 핀이 눌렸다면
+	//delay 500ms 안에 다시 빠르게 누르면 레지스터 값이 증가
+	if(RCC->CSR & (1<<26))
+	{
+		rtcBackupRegWrite(0,rtcBackupRegRead(0)+1);
+		delay(500);
+		reset_count = rtcBackupRegRead(0);
+	}
+
+	return ret;
+}
+
+uint32_t resetGetCount(void)
+{
+  return reset_count;
+}

@@ -8,7 +8,6 @@
 
 #include "bsp.h"
 
-#include "usb_device.h"
 
 void SystemClock_Config(void);
 
@@ -22,23 +21,7 @@ void bspInit(void)
 	 __HAL_RCC_GPIOA_CLK_ENABLE();
 
 
-	 GPIO_InitTypeDef GPIO_InitStruct = {0};
 
-	 GPIO_InitStruct.Pin = GPIO_PIN_12;
-	 GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;  //open drain
-	 GPIO_InitStruct.Pull = GPIO_NOPULL;
-	 GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-	 HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-	 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12,GPIO_PIN_RESET); //회로에 풀업이
-	 delay(100);
-	 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12,GPIO_PIN_SET);
-
-	 GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-	 HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-
-	 MX_USB_DEVICE_Init();
 }
 
 void delay(uint32_t ms)
@@ -62,9 +45,10 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE|RCC_OSCILLATORTYPE_LSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
+  RCC_OscInitStruct.LSEState = RCC_LSE_ON;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
@@ -87,14 +71,14 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USB;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_RTC|RCC_PERIPHCLK_USB;
+  PeriphClkInit.RTCClockSelection = RCC_RTCCLKSOURCE_LSE;
   PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_PLL_DIV1_5;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
   }
 }
-
 /* USER CODE BEGIN 4 */
 
 /* USER CODE END 4 */
