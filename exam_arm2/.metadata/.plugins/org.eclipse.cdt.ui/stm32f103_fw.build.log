@@ -1,10 +1,17 @@
-21:10:44 **** Incremental Build of configuration Debug for project stm32f103_fw ****
+20:51:13 **** Incremental Build of configuration Debug for project stm32f103_fw ****
 make -j12 all 
+arm-none-eabi-gcc "../src/common/core/qbuffer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -c -I"C:/repos/arm/exam_arm2/stm32f103_fw/src" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/bsp" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/common" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/hw" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/ap" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/CMSIS/Include" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/USB_DEVICE/App" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/common/core/qbuffer.d" -MT"src/common/core/qbuffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/qbuffer.o"
+arm-none-eabi-gcc -o "stm32f103_fw.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\repos\arm\exam_arm2\stm32f103_fw\src\bsp\ldscript\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_fw.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103_fw.elf
+ 
 arm-none-eabi-size  stm32f103_fw.elf 
+arm-none-eabi-objdump -h -S stm32f103_fw.elf  > "stm32f103_fw.list"
    text	   data	    bss	    dec	    hex	filename
-  35860	    480	   5968	  42308	   a544	stm32f103_fw.elf
+  32440	    400	   5640	  38480	   9650	stm32f103_fw.elf
 Finished building: default.size.stdout
  
+Finished building: stm32f103_fw.list
+ 
 
-21:10:44 Build Finished. 0 errors, 0 warnings. (took 409ms)
+20:51:14 Build Finished. 0 errors, 0 warnings. (took 966ms)
 
