@@ -24,7 +24,7 @@
 
 
 #define _USE_HW_UART
-#define HW_UART_MAX_CH	    1
+#define HW_UART_MAX_CH	    2
 
 
 
