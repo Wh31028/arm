@@ -28,5 +28,63 @@ void apMain(void)
 			ledToggle(_DEF_LED1);
 
 		}
+
+		if(uartAvailable(_DEF_UART1) > 0)
+		{
+			uint8_t rx_data;
+
+			rx_data = uartRead(_DEF_UART1);
+
+			if(rx_data == '1')
+			{
+				uint8_t buf[32];
+
+				logPrintf("Read...\n");
+
+				flashRead(0x8000000 + (60*1024), buf, 32);      //안쓰는 영역을 위해 (60*1024)
+
+				for(int i=0;i<32;i++)
+				{
+					logPrintf("0x%X : 0x%X\n",0x8000000 + (60*1024)+i,buf[i]);
+				}
+			}
+
+			if(rx_data == '2')
+			{
+				logPrintf("Erase...\n");
+
+				if(flashErase(0x8000000 + (60*1024),32) == true)
+				{
+					logPrintf("Erase OK\n");
+				}
+				else
+				{
+					logPrintf("Erase Fail\n");
+				}
+			}
+
+			if(rx_data =='3')
+			{
+				uint8_t buf[32];
+
+				for(int i=0;i<32;i++)
+				{
+					buf[i] = i;
+				}
+				logPrintf("Write...\n");
+
+				if(flashWrite(0x8000000 + (60*1024),buf,32) == true)
+				{
+					logPrintf("Write Ok\n");
+				}
+				else
+				{
+					logPrintf("Write Fail\n");
+				}
+			}
+
+
+
+		}
 	}
 }

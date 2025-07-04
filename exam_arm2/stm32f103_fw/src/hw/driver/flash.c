@@ -58,6 +58,7 @@ bool flashErase(uint32_t addr, uint32_t length)
 
 	if(sector_count >0)
 	{
+		HAL_FLASH_Unlock();
 		init.TypeErase = FLASH_TYPEERASE_PAGES; //FLASH_EraseInitTypeDef 타고 들어가서 찾음
 		init.Banks = FLASH_BANK_1;  // //FLASH_EraseInitTypeDef 타고 들어가서 찾음
 		init.PageAddress = flash_tbl[start_sector_num].addr;
@@ -67,6 +68,7 @@ bool flashErase(uint32_t addr, uint32_t length)
 		{
 			ret =true;
 		}
+		HAL_FLASH_Lock();
 	}
 
 	return ret;
@@ -75,17 +77,48 @@ bool flashErase(uint32_t addr, uint32_t length)
 
 bool flashWrite(uint32_t addr, uint8_t *p_data, uint32_t length)
 {
-	bool ret =false;
+	bool ret =true;
+	HAL_StatusTypeDef status;
 
+	if(addr%2 != 0)   //ALIGN 되지 않았으면 리턴
+	{
+		return false;
+	}
+
+	HAL_FLASH_Unlock();
+
+	for(int i=0;i<length; i+=2)
+	{
+		uint16_t data;
+
+		data = p_data[i+0]  << 0 ;    //쉬프트를 하지 않는다
+		data |= p_data[i+1] << 8 ;   //16bit 변수로 만들어 준다?
+
+		status = HAL_FLASH_Program(FLASH_TYPEPROGRAM_HALFWORD, addr +i , (uint64_t)data);
+		if(status != HAL_OK)
+		{
+			ret =false;
+			break;
+		}
+	}
+
+	HAL_FLASH_Lock();
 	return ret;
 
 }
 
 bool flashRead(uint32_t addr, uint8_t *p_data, uint32_t length)
 {
-	bool ret =false;
+	bool ret =true;
 
-		return ret;
+	uint8_t *p_byte = (uint8_t *)addr;
+
+	for(int i=0;i<length;i++)
+	{
+		p_data[i] = p_byte[i];
+	}
+
+	return ret;
 }
 
 
@@ -99,7 +132,7 @@ bool flashInSector(uint16_t sector_num, uint32_t addr, uint32_t length)
 	uint32_t flash_end;
 
 	sector_start = flash_tbl[sector_num].addr;
-	sector_end = flash_tbl[sector_num].addr + flash_tbl[sector_num].addr -1;
+	sector_end = flash_tbl[sector_num].addr + flash_tbl[sector_num].length -1;
 	flash_start = addr;      //지워야 할 주소
 	flash_end = addr + length -1;
 

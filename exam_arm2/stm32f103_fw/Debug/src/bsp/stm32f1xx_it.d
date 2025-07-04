@@ -39,6 +39,7 @@ src/bsp/stm32f1xx_it.o: ../src/bsp/stm32f1xx_it.c \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/usb.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/rtc.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/reset.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/flash.h \
  ../src/bsp/stm32f1xx_it.h
 C:/repos/arm/exam_arm2/stm32f103_fw/src/main.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/ap/ap.h:
@@ -80,4 +81,5 @@ C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/uart.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/usb.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/rtc.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/reset.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/flash.h:
 ../src/bsp/stm32f1xx_it.h:
