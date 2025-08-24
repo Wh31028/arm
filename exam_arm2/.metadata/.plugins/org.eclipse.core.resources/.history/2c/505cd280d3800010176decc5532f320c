@@ -1,0 +1,61 @@
+/*
+ * reset.c
+ *
+ *  Created on: May 12, 2025
+ *      Author: wh310
+ */
+
+
+#include "reset.h"
+#include "rtc.h"
+
+static uint32_t reset_count = 0;
+
+bool resetInit(void)
+{
+	bool ret = true;
+
+	//만약 Reset 핀이 눌렸다면
+	//delay 500ms 안에 다시 빠르게 누르면 레지스터 값이 증가
+	if(RCC->CSR & (1<<26))
+	{
+		rtcBackupRegWrite(1,rtcBackupRegRead(1)+1);
+		delay(500);
+		reset_count = rtcBackupRegRead(1);
+	}
+
+	rtcBackupRegWrite(1,0);
+
+
+	if(reset_count != 2)
+	{
+		void (**jump_func)() = (void (**)())(0x8005000 + 4);               //Reset_Handler 주소
+
+
+		if((uint32_t)*jump_func != 0xFFFFFFFF)
+		{
+			HAL_RCC_DeInit();  //clock 초기화
+			HAL_DeInit();   //버스의 패리패럴 리셋
+
+			for(int i=0;i<8;i++)
+			{
+				NVIC->ICER[i] = 0xFFFFFFFF;
+				__DSB();
+				__ISB();
+			}
+
+
+
+			(*jump_func)();
+		}
+	}
+
+
+
+	return ret;
+}
+
+uint32_t resetGetCount(void)
+{
+  return reset_count;
+}

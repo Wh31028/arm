@@ -1,0 +1,29 @@
+/*
+ * flash.h
+ *
+ *  Created on: Jul 4, 2025
+ *      Author: wh310
+ */
+
+#ifndef SRC_COMMON_HW_INCLUDE_FLASH_H_
+#define SRC_COMMON_HW_INCLUDE_FLASH_H_
+
+
+#include "hw_def.h"
+
+
+#ifdef _USE_HW_FLASH
+
+
+
+
+
+
+
+
+
+#endif
+
+
+
+#endif /* SRC_COMMON_HW_INCLUDE_FLASH_H_ */

@@ -1,0 +1,5 @@
+1756016820947	Delete resource 'stm32f103_boot/Debug'
+1756016828480	Delete resource 'stm32f103_boot/stm32f103_fw Debug.launch'
+1756016832263	Delete resource 'stm32f103_boot/stm32f103_fw Debug.cfg'
+1756019548825	Delete resource 'stm32f103_boot/src/lib/cube_f103/Middlewares'
+1756019552254	Delete resource 'stm32f103_boot/src/lib/cube_f103/USB_DEVICE'

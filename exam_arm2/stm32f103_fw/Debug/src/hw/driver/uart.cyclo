@@ -1,5 +1,5 @@
-../src/hw/driver/uart.c:24:7:uartInit	2
-../src/hw/driver/uart.c:34:10:uartOpen	5
+../src/hw/driver/uart.c:24:7:uartInit	1
+../src/hw/driver/uart.c:34:10:uartOpen	4
 ../src/hw/driver/uart.c:88:10:uartAvailable	3
 ../src/hw/driver/uart.c:106:10:uartRead	3
 ../src/hw/driver/uart.c:124:10:uartWrite	4

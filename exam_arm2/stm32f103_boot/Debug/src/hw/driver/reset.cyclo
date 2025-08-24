@@ -1,0 +1,2 @@
+../src/hw/driver/reset.c:14:6:resetInit	5
+../src/hw/driver/reset.c:59:10:resetGetCount	1

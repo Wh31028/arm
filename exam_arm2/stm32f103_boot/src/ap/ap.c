@@ -1,0 +1,31 @@
+/*
+ * ap.c
+ *
+ *  Created on: May 10, 2025
+ *      Author: wh310
+ */
+
+
+#include "ap.h"
+
+
+void apInit(void)
+{
+
+}
+
+void apMain(void)
+{
+	uint32_t pre_time;
+
+	pre_time = millis();
+	while(1)
+	{
+		if(millis() - pre_time >= 100)
+		{
+			pre_time = millis();
+			ledToggle(_DEF_LED1);
+
+		}
+	}
+}
