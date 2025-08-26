@@ -35,7 +35,8 @@ src/hw/hw.o: ../src/hw/hw.c ../src/hw/hw.h ../src/hw/hw_def.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/usb.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/rtc.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/reset.h \
- C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/flash.h
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/flash.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/cli.h
 ../src/hw/hw.h:
 ../src/hw/hw_def.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/def.h:
@@ -75,3 +76,4 @@ C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/usb.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/rtc.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/reset.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/flash.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/cli.h:

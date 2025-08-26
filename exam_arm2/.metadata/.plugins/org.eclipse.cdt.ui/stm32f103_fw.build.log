@@ -1,10 +1,20 @@
-19:38:45 **** Incremental Build of configuration Debug for project stm32f103_fw ****
+14:47:25 **** Incremental Build of configuration Debug for project stm32f103_fw ****
 make -j12 all 
+arm-none-eabi-gcc "../src/hw/driver/led.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DUSER_VECT_TAB_ADDRESS -c -I"C:/repos/arm/exam_arm2/stm32f103_fw/src" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/common/core" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/bsp" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/common" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/hw" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/ap" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/CMSIS/Include" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/USB_DEVICE/App" -I"C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/USB_DEVICE/Target" -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/driver/led.d" -MT"src/hw/driver/led.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/led.o"
+arm-none-eabi-gcc -o "stm32f103_fw.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\repos\arm\exam_arm2\stm32f103_fw\src\bsp\ldscript\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_fw.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103_fw.elf
+ 
 arm-none-eabi-size  stm32f103_fw.elf 
+arm-none-eabi-objdump -h -S stm32f103_fw.elf  > "stm32f103_fw.list"
    text	   data	    bss	    dec	    hex	filename
-  17520	    400	   6576	  24496	   5fb0	stm32f103_fw.elf
+  37472	    856	   7848	  46176	   b460	stm32f103_fw.elf
+arm-none-eabi-objcopy  -O binary stm32f103_fw.elf  "stm32f103_fw.bin"
 Finished building: default.size.stdout
  
+Finished building: stm32f103_fw.bin
+ 
+Finished building: stm32f103_fw.list
+ 
 
-19:38:45 Build Finished. 0 errors, 0 warnings. (took 412ms)
+14:47:26 Build Finished. 0 errors, 0 warnings. (took 1s.374ms)
 

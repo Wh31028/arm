@@ -44,6 +44,7 @@ src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o:
  C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/rtc.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/reset.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/flash.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/cli.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h
@@ -91,6 +92,7 @@ C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/usb.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/rtc.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/reset.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/flash.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/cli.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:

@@ -13,6 +13,9 @@ void apInit(void)
 {
 	uartOpen(_DEF_UART1, 57600);     //USB      (통신속도가 바뀌어서 통신이 안되지는 않음)
 	uartOpen(_DEF_UART2, 57600);     //UART			(통신속도가 바뀌면 그에 맞춰서 데이터를 보내줘야함)
+
+  cliOpen(_DEF_UART1, 57600);
+  cliOpenLog(_DEF_UART2, 57600);
 }
 
 void apMain(void)
@@ -28,5 +31,15 @@ void apMain(void)
 			ledToggle(_DEF_LED1);
 
 		}
+
+		if (uartAvailable(_DEF_UART2) > 0)
+		{
+			uint8_t rx_data;
+			rx_data = uartRead(_DEF_UART2);
+
+			uartPrintf(_DEF_UART2, "Rx : 0x%X\n", rx_data);
+		}
+
+		cliMain();
 	}
 }
