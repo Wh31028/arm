@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<item key="LastUsedHeaderTemplate" value="Default C header template"/>
 	<item key="LastUsedSourceTemplate" value="Default C source template"/>
-	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="${workspace_loc:/${ProjName}/src/common/core}"/>
+	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="${workspace_loc:/${ProjName}/src/lib/FreeRTOS/Source/portable/GCC/ARM_CM3}"/>
 	<item key="org.eclipse.cdt.ui.codeformatter.create_profile_dialog.open_edit" value="true"/>
 	<item key="org.eclipse.cdt.uiformatter_page.white_space.c_view.inner" value="0"/>
 	<item key="org.eclipse.cdt.uiformatter_page.white_space_tab_page.node" value="0"/>
@@ -42,5 +42,8 @@
 		<item key="DIALOG_WIDTH" value="533"/>
 		<item key="DIALOG_HEIGHT" value="692"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="CResourceRenameRefactoringInputPage">
+		<item key="updateReferences" value="true"/>
 	</section>
 </section>

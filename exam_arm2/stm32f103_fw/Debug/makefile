@@ -14,6 +14,10 @@ RM := rm -rf
 -include src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Core/Src/subdir.mk
 -include src/lib/cube_f103/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/subdir.mk
 -include src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
+-include src/lib/FreeRTOS/Source/portable/MemMang/subdir.mk
+-include src/lib/FreeRTOS/Source/portable/GCC/ARM_CM3/subdir.mk
+-include src/lib/FreeRTOS/Source/CMSIS_RTOS/subdir.mk
+-include src/lib/FreeRTOS/Source/subdir.mk
 -include src/hw/driver/subdir.mk
 -include src/hw/subdir.mk
 -include src/common/core/subdir.mk

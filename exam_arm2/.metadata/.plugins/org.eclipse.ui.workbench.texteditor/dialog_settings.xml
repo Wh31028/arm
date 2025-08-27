@@ -3,6 +3,10 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
 	<list key="searchhistory">
+		<item value="delay"/>
+		<item value="sysTick"/>
+		<item value="sysTi"/>
+		<item value="sy"/>
 		<item value="FLASH_Type_Program"/>
 		<item value="HAL_FLASH_Program"/>
 		<item value="FLASH_BANKx_END"/>
@@ -14,9 +18,5 @@
 		<item value="Program"/>
 		<item value="ch"/>
 		<item value="rx_full "/>
-		<item value="Receive_DMA"/>
-		<item value="Rec"/>
-		<item value="RecDMA"/>
-		<item value="Recieve DMA"/>
 	</list>
 </section>

@@ -1,2 +1,3 @@
-../src/ap/ap.c:12:6:apInit	8	static
-../src/ap/ap.c:21:6:apMain	16	static
+../src/ap/ap.c:43:13:threadLed	8	static
+../src/ap/ap.c:15:6:apInit	40	static
+../src/ap/ap.c:34:6:apMain	8	static

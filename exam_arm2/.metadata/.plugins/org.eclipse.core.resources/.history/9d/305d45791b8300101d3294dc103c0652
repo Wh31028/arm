@@ -1,0 +1,23 @@
+/*
+ * main.c
+ *
+ *  Created on: May 10, 2025
+ *      Author: wh310
+ */
+
+
+#include "main.h"
+
+
+static void threadMain(void const *argument);
+
+
+int main(void)
+{
+	hwInit();
+	apInit();
+
+	apMain();
+
+	return 0;
+}

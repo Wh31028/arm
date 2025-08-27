@@ -31,6 +31,23 @@ src/ap/ap.o: ../src/ap/ap.c ../src/ap/ap.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/FreeRTOS.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/bsp/FreeRTOSConfig.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/projdefs.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/portable.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/deprecated_definitions.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/mpu_wrappers.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/task.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/list.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/timers.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/task.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/queue.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/semphr.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/queue.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/event_groups.h \
+ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/timers.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/led.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/hw/hw_def.h \
  C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/uart.h \
@@ -72,6 +89,23 @@ C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driv
 C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/FreeRTOS.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/bsp/FreeRTOSConfig.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/projdefs.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/portable.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/deprecated_definitions.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/mpu_wrappers.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/task.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/list.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/timers.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/task.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/queue.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/semphr.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/queue.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/event_groups.h:
+C:/repos/arm/exam_arm2/stm32f103_fw/src/lib/FreeRTOS/Source/include/timers.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/led.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/hw/hw_def.h:
 C:/repos/arm/exam_arm2/stm32f103_fw/src/common/hw/include/uart.h:
